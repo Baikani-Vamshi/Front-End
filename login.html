@@ -1,0 +1,81 @@
+<html>
+<head>
+<style>
+input:checked
+{
+accent-color:blue;
+width:17px;
+height:17px;
+}
+[id |="demo"]
+{
+border-style:dashed;
+border-radius:5px;
+border-color:red;
+}
+div
+{
+border-style:dotted;
+border-color:blue;
+padding:20px;
+color:green;
+background-color:white;
+border-radius:40px;
+border-top-left-radius:30px;
+border-top-right-radius:30px;
+border-bottom-left-radius:30px;
+border-bottom-right-radius:30px;
+}
+body
+{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.ani
+{
+border-style:solid;
+border-color:blue;
+background-color:wheat;
+border-radius:20px;
+}
+</style>
+</head>
+<body bgcolor="cyan">
+
+<div>
+<font face="algerian" color="red"><h2 text="red" ><u>Registration Form</u></h2></font>
+<form name="login" action="login.jsp" method="post">
+<label for="fname">First Name&nbsp&nbsp</label><input type="text" name="fname" value="Vamshi" readonly required id="demo"><br><br>
+<label for="lname">Last Name&nbsp&nbsp</label><input type="text" name="lname" required placeholder="Last Name" id="demo-fr"><br><br>
+<label for="pword">PassWord&nbsp&nbsp</label><input type="password" name="pword" required    id="demo-se"><br><br>
+<label for="gender">Gender&nbsp&nbsp</label><input type="radio" name="gender" value="male" required placeholder="Gender">Male&nbsp
+<input type="radio" name="gender" value="female" required placeholder ="Gender">Female <br><br>
+<label for="address" >Address&nbsp&nbsp</label><textarea rows="5" cols="20 name="address" required placeholder="address"id="demo-th" ></textarea><br><br>
+<label> Date of Birth&nbsp&nbsp </label><input type="date" required placeholder="Date of Birth" id="demo-four"><br><br>
+<label for="dt">Date&Time&nbsp&nbsp</label> <input type="datetime-lacal"  name="dt" required placeholder="Date&Time" id="demo-six"><br><br>
+Languages&nbsp&nbsp<input type="checkbox" name="language1" value="telugu" >Telugu&nbsp
+<input type="checkbox" name="language2" value="hindi">Hindi&nbsp<input type="checkbox" name="language3" value="english">English&nbsp<br><br>
+<label for="mail">Mail Id&nbsp&nbsp</label></td><td><input type="email" name="mail" required placeholder="Mail Id" id="demo-seven"><br><br>
+<label for="mobileno">Mobile No&nbsp&nbsp</label></td><td> <input type="tel" name="mobileno" patern="[0-9]{10}" required placeholder="Mobile No" id="demo-eight"><br><br>
+<label for="country">Country &nbsp&nbsp</label>
+<select name="country"id="demo-nine">
+<option>India
+<option>Pakistan
+<option>USA
+<option>UK
+<option>New Zeland
+<option>Srilanka
+<option>China
+<option>Austrelia
+<option>Nedarland
+<option>Afganistan
+<option>England
+</select><br><br>
+Upload Resume&nbsp<input type="file" value="resume"><br><br>
+<input type="Submit" class="ani">
+<input type="Reset" class="ani">
+</form>
+</div>
+</body>
+</html>
